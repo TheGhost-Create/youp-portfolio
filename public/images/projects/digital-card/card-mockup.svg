@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" width="100%" height="100%" fill="none">
+  <rect width="1000" height="650" fill="#080A0E"/>
+  <rect x="40" y="40" width="920" height="570" rx="12" fill="#10151E" stroke="#253041"/>
+  
+  <text x="80" y="90" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="700">VANTAJ CARDLINK — Responsive Device Architecture</text>
+  <text x="80" y="115" fill="#969DA8" font-family="'Space Grotesk', sans-serif" font-size="13">Adaptation automatique pour le partage rapide via navigateur mobile et desktop</text>
+
+  <!-- Laptop View -->
+  <g transform="translate(80, 160)">
+    <rect width="460" height="280" rx="8" fill="#161F2C" stroke="#37475E" stroke-width="2"/>
+    <rect x="15" y="15" width="430" height="250" fill="#0D1117"/>
+    <!-- Simulated UI -->
+    <rect x="35" y="35" width="180" height="20" rx="4" fill="#C5A16A" opacity="0.3"/>
+    <text x="45" y="49" fill="#C5A16A" font-family="monospace" font-size="10">VANTAJ BUSINESS SUITE</text>
+    <rect x="35" y="70" width="390" height="150" rx="6" fill="#141B26" stroke="#243144"/>
+    <circle cx="75" cy="115" r="25" fill="#C5A16A"/>
+    <text x="120" y="110" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">YOUP-YOUP SOTER AUTON</text>
+    <text x="120" y="130" fill="#969DA8" font-family="'Space Grotesk', sans-serif" font-size="11">Digital Engineer &amp; Consultant</text>
+    <text x="35" y="320" fill="#969DA8" font-family="'Space Grotesk', sans-serif" font-size="12">Desktop Web App View (Vercel Production)</text>
+  </g>
+
+  <!-- Mobile View -->
+  <g transform="translate(620, 140)">
+    <rect width="240" height="420" rx="24" fill="#0A0D12" stroke="#C5A16A" stroke-width="2"/>
+    <rect x="12" y="20" width="216" height="380" rx="16" fill="#131922"/>
+    <!-- Avatar -->
+    <circle cx="120" cy="80" r="32" fill="#253041" stroke="#C5A16A" stroke-width="2"/>
+    <text x="120" y="85" text-anchor="middle" fill="#C5A16A" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">SA</text>
+    
+    <text x="120" y="135" text-anchor="middle" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700">Soter Auton</text>
+    <text x="120" y="152" text-anchor="middle" fill="#969DA8" font-family="'Space Grotesk', sans-serif" font-size="10">Digital Engineer</text>
+
+    <!-- Tap to action buttons -->
+    <rect x="35" y="180" width="170" height="34" rx="6" fill="#1B2433" stroke="#2F3F56"/>
+    <text x="50" y="202" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="11">📞 Appeler directement</text>
+
+    <rect x="35" y="225" width="170" height="34" rx="6" fill="#1B2433" stroke="#2F3F56"/>
+    <text x="50" y="247" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="11">✉️ Envoyer un message</text>
+
+    <rect x="35" y="270" width="170" height="34" rx="6" fill="#1B2433" stroke="#2F3F56"/>
+    <text x="50" y="292" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="11">💾 Sauvegarder contact</text>
+
+    <text x="120" y="460" text-anchor="middle" fill="#969DA8" font-family="'Space Grotesk', sans-serif" font-size="12">Mobile View (iOS &amp; Android)</text>
+  </g>
+</svg>

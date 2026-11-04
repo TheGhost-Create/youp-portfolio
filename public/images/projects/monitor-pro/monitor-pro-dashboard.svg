@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" width="100%" height="100%" fill="none">
+  <rect width="1000" height="650" fill="#080A0E"/>
+  <rect x="30" y="30" width="940" height="590" rx="8" fill="#0F141C" stroke="#253041"/>
+  <rect x="30" y="30" width="940" height="42" rx="8" fill="#151A22"/>
+  <circle cx="55" cy="51" r="5" fill="#FF7138"/>
+  <circle cx="75" cy="51" r="5" fill="#C5A16A"/>
+  <circle cx="95" cy="51" r="5" fill="#38A169"/>
+  <text x="120" y="56" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="600">MONITOR_PRO — System Topology &amp; Architecture Map</text>
+  
+  <!-- Architectural Diagram Nodes -->
+  <g transform="translate(60, 110)">
+    <!-- Kernel / OS Layer -->
+    <rect x="0" y="0" width="260" height="180" rx="6" fill="#141B26" stroke="#C5A16A" stroke-width="1.5"/>
+    <text x="20" y="30" fill="#C5A16A" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">01. LINUX HOST CORE</text>
+    <text x="20" y="60" fill="#969DA8" font-family="monospace" font-size="11">/proc, /sys filesystem</text>
+    <text x="20" y="85" fill="#969DA8" font-family="monospace" font-size="11">Network sockets (TCP/UDP)</text>
+    <text x="20" y="110" fill="#969DA8" font-family="monospace" font-size="11">Kernel Process Table</text>
+    <rect x="20" y="130" width="160" height="26" rx="4" fill="#1E2738"/>
+    <text x="30" y="147" fill="#F2F1ED" font-family="monospace" font-size="11">DRIVER: psutil C-API</text>
+
+    <!-- Arrow 1 to 2 -->
+    <line x1="260" y1="90" x2="330" y2="90" stroke="#FF7138" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <!-- Engine Layer -->
+    <rect x="330" y="0" width="260" height="180" rx="6" fill="#141B26" stroke="#FF7138" stroke-width="1.5"/>
+    <text x="350" y="30" fill="#FF7138" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">02. TELEMETRY ENGINE</text>
+    <text x="350" y="60" fill="#969DA8" font-family="monospace" font-size="11">system_monitor.py</text>
+    <text x="350" y="85" fill="#969DA8" font-family="monospace" font-size="11">process_port_mapper.py</text>
+    <text x="350" y="110" fill="#969DA8" font-family="monospace" font-size="11">alert_manager.py</text>
+    <rect x="350" y="130" width="180" height="26" rx="4" fill="#1E2738"/>
+    <text x="360" y="147" fill="#FF7138" font-family="monospace" font-size="11">THREAD: ASYNC WORKERS</text>
+
+    <!-- Arrow 2 to 3 -->
+    <line x1="590" y1="90" x2="660" y2="90" stroke="#C5A16A" stroke-width="2"/>
+
+    <!-- Presentation Layer -->
+    <rect x="660" y="0" width="220" height="180" rx="6" fill="#141B26" stroke="#38A169" stroke-width="1.5"/>
+    <text x="680" y="30" fill="#38A169" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">03. RICH DASHBOARD</text>
+    <text x="680" y="60" fill="#969DA8" font-family="monospace" font-size="11">Rich CLI Console</text>
+    <text x="680" y="85" fill="#969DA8" font-family="monospace" font-size="11">Live Gauge Panels</text>
+    <text x="680" y="110" fill="#969DA8" font-family="monospace" font-size="11">Alert Notification Box</text>
+    <rect x="680" y="130" width="180" height="26" rx="4" fill="#1E2738"/>
+    <text x="690" y="147" fill="#38A169" font-family="monospace" font-size="11">REFRESH: 1000ms</text>
+  </g>
+
+  <!-- Metrics Grid Below -->
+  <g transform="translate(60, 330)">
+    <rect width="880" height="240" rx="6" fill="#0C0F15" stroke="#253041"/>
+    <text x="24" y="30" fill="#C5A16A" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="600">LIVE PROCESS CORRELATION &amp; AUDIT MATRIX</text>
+    <text x="24" y="65" fill="#969DA8" font-family="monospace" font-size="11">PID    NAME               USER       CPU%    MEM%    STATUS        PORTS LISTENING</text>
+    <line x1="24" y1="75" x2="856" y2="75" stroke="#1F2837"/>
+    <text x="24" y="98" fill="#F2F1ED" font-family="monospace" font-size="11">1      systemd            root       0.0%    0.1%    Active        -</text>
+    <text x="24" y="122" fill="#F2F1ED" font-family="monospace" font-size="11">842    sshd               root       0.1%    0.3%    Active        0.0.0.0:22 [TCP]</text>
+    <text x="24" y="146" fill="#F2F1ED" font-family="monospace" font-size="11">1204   monitor_server.py  youp-youp  1.8%    1.4%    Active        127.0.0.1:8443 [TCP]</text>
+    <text x="24" y="170" fill="#FF7138" font-family="monospace" font-size="11">2410   port_scanner.py    youp-youp  4.2%    0.8%    Active        LAN 192.168.1.0/24</text>
+    <text x="24" y="194" fill="#38A169" font-family="monospace" font-size="11">3190   nginx              www-data   0.3%    0.5%    Active        0.0.0.0:80, 0.0.0.0:443</text>
+  </g>
+</svg>

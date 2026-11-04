@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="motionBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080A0E"/>
+      <stop offset="50%" stop-color="#141923"/>
+      <stop offset="100%" stop-color="#07090C"/>
+    </linearGradient>
+    <linearGradient id="kineticOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF7138"/>
+      <stop offset="100%" stop-color="#FFA26A"/>
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C5A16A"/>
+      <stop offset="100%" stop-color="#F3DCB3"/>
+    </linearGradient>
+    <filter id="bloom">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#motionBg)"/>
+
+  <!-- Motion Trails / Light Streaks -->
+  <path d="M -100 600 C 300 500, 500 200, 1300 250" stroke="#FF7138" stroke-width="3" opacity="0.6" filter="url(#bloom)"/>
+  <path d="M -50 650 C 350 550, 550 250, 1350 300" stroke="#C5A16A" stroke-width="2" opacity="0.4" filter="url(#bloom)"/>
+
+  <!-- Central Kinetic Brand Logo Shape -->
+  <g transform="translate(600, 360)">
+    <!-- Rotating geometric rings -->
+    <circle cx="0" cy="0" r="160" stroke="#253041" stroke-width="2" stroke-dasharray="10 15"/>
+    <circle cx="0" cy="0" r="120" stroke="url(#kineticOrange)" stroke-width="3" stroke-dasharray="60 30" opacity="0.8"/>
+    <circle cx="0" cy="0" r="80" stroke="url(#goldGlow)" stroke-width="2" stroke-dasharray="20 10"/>
+
+    <!-- Geometric Monogram Core -->
+    <polygon points="0,-60 52,30 -52,30" fill="none" stroke="#F2F1ED" stroke-width="4"/>
+    <polygon points="0,60 -52,-30 52,-30" fill="none" stroke="url(#kineticOrange)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="10" fill="#FF7138" filter="url(#bloom)"/>
+
+    <text y="120" text-anchor="middle" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="800" letter-spacing="6">BRAND MOTION</text>
+    <text y="150" text-anchor="middle" fill="#C5A16A" font-family="'Space Grotesk', sans-serif" font-size="14" letter-spacing="4">KINETIC IDENTITY STUDY · 24 FPS</text>
+  </g>
+
+  <!-- Video Player Interface Overlay -->
+  <g transform="translate(100, 680)">
+    <rect width="1000" height="60" rx="12" fill="#111620" stroke="#253041" stroke-width="1.2"/>
+    
+    <!-- Play Button -->
+    <circle cx="45" cy="30" r="18" fill="#FF7138"/>
+    <polygon points="42,23 54,30 42,37" fill="#080A0E"/>
+
+    <!-- Timeline Bar -->
+    <rect x="85" y="27" width="760" height="6" rx="3" fill="#1E2736"/>
+    <rect x="85" y="27" width="280" height="6" rx="3" fill="url(#kineticOrange)"/>
+    <circle cx="365" cy="30" r="7" fill="#F2F1ED"/>
+
+    <!-- Time code -->
+    <text x="870" y="34" fill="#F2F1ED" font-family="monospace" font-size="12">00:08 / 00:24</text>
+    <text x="970" y="34" fill="#C5A16A" font-family="monospace" font-size="12">4K</text>
+  </g>
+</svg>

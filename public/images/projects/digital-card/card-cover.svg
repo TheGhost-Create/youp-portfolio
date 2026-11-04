@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080A0E"/>
+      <stop offset="100%" stop-color="#151A22"/>
+    </linearGradient>
+    <linearGradient id="cardGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C5A16A"/>
+      <stop offset="100%" stop-color="#9E7D46"/>
+    </linearGradient>
+    <linearGradient id="cardCyber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D3A4F"/>
+      <stop offset="100%" stop-color="#141B26"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="25" stdDeviation="30" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#cardBg)"/>
+
+  <!-- Subtle glow circles -->
+  <circle cx="600" cy="400" r="300" fill="#C5A16A" opacity="0.08" filter="blur(60px)"/>
+  <circle cx="850" cy="300" r="200" fill="#FF7138" opacity="0.05" filter="blur(60px)"/>
+
+  <!-- Desktop Presentation Frame -->
+  <g transform="translate(150, 100)" filter="url(#cardShadow)">
+    <rect width="900" height="600" rx="16" fill="#0E131B" stroke="#253041" stroke-width="1.5"/>
+    
+    <!-- Top window bar -->
+    <rect width="900" height="42" rx="16" fill="#151D28"/>
+    <circle cx="28" cy="21" r="5" fill="#FF7138"/>
+    <circle cx="46" cy="21" r="5" fill="#C5A16A"/>
+    <circle cx="64" cy="21" r="5" fill="#38A169"/>
+    <text x="96" y="26" fill="#969DA8" font-family="'Space Grotesk', sans-serif" font-size="12">https://carte-de-visite-electronique.vercel.app</text>
+
+    <!-- Floating 3D Digital Business Card -->
+    <g transform="translate(120, 100)">
+      <!-- Main NFC Card Perspective -->
+      <rect width="420" height="260" rx="16" fill="url(#cardCyber)" stroke="#C5A16A" stroke-width="1.5"/>
+      
+      <!-- Chip -->
+      <rect x="40" y="45" width="50" height="40" rx="6" fill="#C5A16A"/>
+      <path d="M 40 65 L 90 65 M 65 45 L 65 85" stroke="#141B26" stroke-width="1.5"/>
+      
+      <!-- Brand & Name -->
+      <text x="40" y="150" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700">YOUP-YOUP SOTER AUTON</text>
+      <text x="40" y="175" fill="#C5A16A" font-family="'Space Grotesk', sans-serif" font-size="12" letter-spacing="2">DIGITAL ENGINEER</text>
+      
+      <!-- Phone & Email -->
+      <text x="40" y="215" fill="#969DA8" font-family="monospace" font-size="11">+237 693 322 742 // autyoubap420@gmail.com</text>
+
+      <!-- Wireless NFC icon -->
+      <path d="M 370 50 A 15 15 0 0 1 370 70 M 360 45 A 25 25 0 0 1 360 75" fill="none" stroke="#C5A16A" stroke-width="2"/>
+    </g>
+
+    <!-- Smartphone Mockup on the side -->
+    <g transform="translate(600, 70)">
+      <rect width="220" height="420" rx="30" fill="#0A0D12" stroke="#3A485E" stroke-width="3"/>
+      <!-- Screen -->
+      <rect x="10" y="18" width="200" height="384" rx="22" fill="#141A24"/>
+      
+      <!-- Dynamic QR Code inside phone -->
+      <rect x="45" y="70" width="130" height="130" rx="10" fill="#FFFFFF"/>
+      <!-- QR modules representation -->
+      <rect x="55" y="80" width="30" height="30" fill="#000000"/>
+      <rect x="135" y="80" width="30" height="30" fill="#000000"/>
+      <rect x="55" y="160" width="30" height="30" fill="#000000"/>
+      <rect x="95" y="120" width="30" height="30" fill="#FF7138"/>
+
+      <text x="110" y="235" text-anchor="middle" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">SCAN &amp; CONNECT</text>
+      <text x="110" y="255" text-anchor="middle" fill="#969DA8" font-family="'Space Grotesk', sans-serif" font-size="10">Vantaj CardLink v1.0</text>
+
+      <!-- Action Button inside smartphone -->
+      <rect x="30" y="290" width="160" height="36" rx="18" fill="url(#cardGold)"/>
+      <text x="110" y="313" text-anchor="middle" fill="#080A0E" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">ENREGISTRER VCARD</text>
+
+      <rect x="30" y="340" width="160" height="32" rx="16" fill="#1E2736"/>
+      <text x="110" y="360" text-anchor="middle" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="10">PARTAGER PAR WHATSAPP</text>
+    </g>
+  </g>
+</svg>

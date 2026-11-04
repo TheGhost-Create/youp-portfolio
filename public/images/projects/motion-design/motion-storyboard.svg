@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" width="100%" height="100%" fill="none">
+  <rect width="1000" height="650" fill="#080A0E"/>
+  <rect x="40" y="40" width="920" height="570" rx="10" fill="#111620" stroke="#253041"/>
+  
+  <text x="70" y="85" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">BRAND MOTION — Storyboard &amp; Kinetic Sequencing (24s Total)</text>
+  <text x="70" y="110" fill="#969DA8" font-family="'Space Grotesk', sans-serif" font-size="12">Étude de rythme, points clés d'animation et révélation volumétrique</text>
+
+  <!-- 3 Storyboard Frames -->
+  <g transform="translate(70, 140)">
+    <!-- Frame 1: 00:00 - 00:06 (Genesis) -->
+    <rect width="260" height="170" rx="6" fill="#171F2C" stroke="#C5A16A" stroke-width="1.5"/>
+    <circle cx="130" cy="85" r="20" fill="none" stroke="#C5A16A" stroke-width="2"/>
+    <text x="130" y="150" text-anchor="middle" fill="#C5A16A" font-family="monospace" font-size="11">PHASE 1: GENESIS (0-6s)</text>
+    <text x="10" y="195" fill="#969DA8" font-family="'Space Grotesk', sans-serif" font-size="11">Points de particules lumineuses et tracé vectoriel initial du monogramme.</text>
+
+    <!-- Frame 2: 00:06 - 00:16 (Kinetic Expansion) -->
+    <rect x="300" width="260" height="170" rx="6" fill="#171F2C" stroke="#FF7138" stroke-width="1.5"/>
+    <polygon points="430,45 470,115 390,115" fill="none" stroke="#FF7138" stroke-width="3"/>
+    <line x1="380" y1="85" x2="480" y2="85" stroke="#FFA26A" stroke-width="1" stroke-dasharray="4"/>
+    <text x="430" y="150" text-anchor="middle" fill="#FF7138" font-family="monospace" font-size="11">PHASE 2: EXPANSION (6-16s)</text>
+    <text x="300" y="195" fill="#969DA8" font-family="'Space Grotesk', sans-serif" font-size="11">Accélération typographique, distorsion géométrique et transitions franches.</text>
+
+    <!-- Frame 3: 00:16 - 00:24 (Signature Lock) -->
+    <rect x="600" width="260" height="170" rx="6" fill="#171F2C" stroke="#38A169" stroke-width="1.5"/>
+    <rect x="650" y="60" width="160" height="40" rx="6" fill="#101721" stroke="#38A169"/>
+    <text x="730" y="85" text-anchor="middle" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">AUTON DIGITAL</text>
+    <text x="730" y="150" text-anchor="middle" fill="#38A169" font-family="monospace" font-size="11">PHASE 3: RESOLUTION (16-24s)</text>
+    <text x="600" y="195" fill="#969DA8" font-family="'Space Grotesk', sans-serif" font-size="11">Verrouillage de l'identité, lueur volumétrique résiduelle et call-to-action.</text>
+  </g>
+
+  <!-- Technical Pipeline section -->
+  <g transform="translate(70, 400)">
+    <rect width="860" height="160" rx="8" fill="#0C1017" stroke="#253041"/>
+    <text x="24" y="32" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">PIPELINE TECHNIQUE ET COURBES D'ANIMATION</text>
+    <text x="24" y="65" fill="#969DA8" font-family="monospace" font-size="12">• Composition: Adobe After Effects (3840×2160, 24 fps, Easing cubique)</text>
+    <text x="24" y="90" fill="#969DA8" font-family="monospace" font-size="12">• Éléments 3D: Passes de réflexion métallique et ombres volumétriques</text>
+    <text x="24" y="115" fill="#969DA8" font-family="monospace" font-size="12">• Export Master: Apple ProRes 422 HQ + Déclinaisons Web (MP4 H.264 / WebM VP9)</text>
+    <text x="24" y="140" fill="#C5A16A" font-family="monospace" font-size="12">STATUS: Fichiers de projet prêts pour intégration vidéo finale</text>
+  </g>
+</svg>

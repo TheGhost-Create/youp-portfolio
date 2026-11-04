@@ -1,0 +1,50 @@
+:root {
+  --bg-primary: #080A0E;
+  --bg-secondary: #151A22;
+  --bg-card: rgba(21, 26, 34, 0.7);
+  --bg-card-hover: rgba(26, 33, 44, 0.9);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-focus: rgba(197, 161, 106, 0.4);
+  
+  --text-primary: #F2F1ED;
+  --text-secondary: #969DA8;
+  --text-muted: #646C7A;
+
+  --accent-gold: #C5A16A;
+  --accent-gold-glow: rgba(197, 161, 106, 0.25);
+  --accent-orange: #FF7138;
+  --accent-orange-glow: rgba(255, 113, 56, 0.3);
+
+  --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(21, 26, 34, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-panel-gold {
+  background: rgba(21, 26, 34, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(197, 161, 106, 0.25);
+  box-shadow: 0 10px 30px -10px rgba(197, 161, 106, 0.15);
+}
+
+.glass-panel-orange {
+  background: rgba(21, 26, 34, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 113, 56, 0.25);
+  box-shadow: 0 10px 30px -10px rgba(255, 113, 56, 0.15);
+}
+
+.cyber-grid {
+  background-image: radial-gradient(rgba(197, 161, 106, 0.1) 1px, transparent 1px);
+  background-size: 32px 32px;
+}

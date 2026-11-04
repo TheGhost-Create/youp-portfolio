@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" width="100%" height="100%" fill="none">
+  <rect width="1000" height="650" fill="#080A0E"/>
+  <rect x="30" y="30" width="940" height="590" rx="8" fill="#111620" stroke="#253041"/>
+  <text x="60" y="70" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="700">MONITOR_PRO — Realtime Host Telemetry &amp; Resource Allocation</text>
+  <text x="60" y="95" fill="#969DA8" font-family="'Space Grotesk', sans-serif" font-size="12">Supervision des threads Linux, analyse des I/O disques et alertes seuils de saturation</text>
+
+  <!-- Metric Gauges -->
+  <g transform="translate(60, 130)">
+    <!-- CPU Gauge -->
+    <rect width="260" height="200" rx="8" fill="#161F2C" stroke="#2A384C"/>
+    <text x="24" y="32" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="600">CPU Core Average</text>
+    <text x="24" y="90" fill="#FF7138" font-family="'Space Grotesk', sans-serif" font-size="38" font-weight="800">34.8%</text>
+    <text x="24" y="120" fill="#969DA8" font-family="monospace" font-size="11">8 Cores active @ 3.4GHz</text>
+    <rect x="24" y="150" width="212" height="8" rx="4" fill="#243042"/>
+    <rect x="24" y="150" width="74" height="8" rx="4" fill="#FF7138"/>
+
+    <!-- RAM Gauge -->
+    <rect x="290" width="260" height="200" rx="8" fill="#161F2C" stroke="#2A384C"/>
+    <text x="314" y="32" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="600">Physical RAM</text>
+    <text x="314" y="90" fill="#C5A16A" font-family="'Space Grotesk', sans-serif" font-size="38" font-weight="800">6.42 GB</text>
+    <text x="314" y="120" fill="#969DA8" font-family="monospace" font-size="11">Total: 15.8 GB (40.6% used)</text>
+    <rect x="314" y="150" width="212" height="8" rx="4" fill="#243042"/>
+    <rect x="314" y="150" width="86" height="8" rx="4" fill="#C5A16A"/>
+
+    <!-- Network Bandwidth -->
+    <rect x="580" width="280" height="200" rx="8" fill="#161F2C" stroke="#2A384C"/>
+    <text x="604" y="32" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="600">Network I/O [eth0]</text>
+    <text x="604" y="90" fill="#38A169" font-family="'Space Grotesk', sans-serif" font-size="38" font-weight="800">1.2 MB/s</text>
+    <text x="604" y="120" fill="#969DA8" font-family="monospace" font-size="11">TX: 840 KB/s | RX: 360 KB/s</text>
+    <rect x="604" y="150" width="232" height="8" rx="4" fill="#243042"/>
+    <rect x="604" y="150" width="98" height="8" rx="4" fill="#38A169"/>
+  </g>
+
+  <!-- Live Waveform Graph -->
+  <g transform="translate(60, 360)">
+    <rect width="860" height="210" rx="8" fill="#0B0F16" stroke="#253041"/>
+    <text x="24" y="30" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="600">CHRONO-TELEMETRY (LAST 60 SECONDS)</text>
+    
+    <!-- Waveform Lines -->
+    <path d="M 30 150 Q 80 120 130 140 T 230 110 T 330 160 T 430 90 T 530 130 T 630 100 T 730 140 T 830 110" fill="none" stroke="#FF7138" stroke-width="2.5"/>
+    <path d="M 30 170 Q 80 160 130 165 T 230 155 T 330 170 T 430 145 T 530 160 T 630 150 T 730 165 T 830 155" fill="none" stroke="#C5A16A" stroke-width="2" stroke-dasharray="3"/>
+    
+    <text x="730" y="40" fill="#FF7138" font-family="monospace" font-size="10">─ CPU Load (%)</text>
+    <text x="730" y="55" fill="#C5A16A" font-family="monospace" font-size="10">--- RAM Allocation (%)</text>
+  </g>
+</svg>

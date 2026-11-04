@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080A0E" />
+      <stop offset="50%" stop-color="#0F141C" />
+      <stop offset="100%" stop-color="#05070A" />
+    </linearGradient>
+    <linearGradient id="cyberOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF7138" />
+      <stop offset="100%" stop-color="#FFA070" />
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C5A16A" />
+      <stop offset="100%" stop-color="#E5C795" />
+    </linearGradient>
+    <filter id="glowOrange" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E2633" stroke-width="0.75" stroke-opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGrad)" />
+  <rect width="1200" height="800" fill="url(#grid)" />
+
+  <!-- Background Ambient Glow -->
+  <circle cx="950" cy="200" r="280" fill="#FF7138" opacity="0.08" filter="url(#glowOrange)"/>
+  <circle cx="250" cy="600" r="320" fill="#C5A16A" opacity="0.06" filter="url(#glowOrange)"/>
+
+  <!-- Top Status Bar -->
+  <g transform="translate(60, 50)">
+    <rect width="1080" height="40" rx="6" fill="#151A22" stroke="#253041" stroke-width="1"/>
+    <circle cx="24" cy="20" r="5" fill="#FF7138"/>
+    <circle cx="42" cy="20" r="5" fill="#C5A16A"/>
+    <circle cx="60" cy="20" r="5" fill="#38A169"/>
+    <text x="90" y="24" fill="#969DA8" font-family="'Space Grotesk', monospace" font-size="12" letter-spacing="1">MONITOR_PRO v2.4 // TELEMETRY &amp; SECURITY ENGINE // HOST: KALI-AUDIT-01</text>
+    <text x="980" y="24" fill="#38A169" font-family="'Space Grotesk', monospace" font-size="12" font-weight="600">STATUS: ACTIVE</text>
+  </g>
+
+  <!-- Left: System Metrics Box -->
+  <g transform="translate(60, 110)">
+    <rect width="400" height="300" rx="10" fill="#111620" stroke="#253041" stroke-width="1.2"/>
+    <rect width="400" height="45" rx="10" fill="#151D2A"/>
+    <text x="24" y="28" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">CPU &amp; MEMORY TELEMETRY</text>
+    <text x="320" y="28" fill="#FF7138" font-family="monospace" font-size="11">psutil.cpu_pct</text>
+
+    <!-- CPU Bar -->
+    <text x="24" y="80" fill="#969DA8" font-family="'Space Grotesk', sans-serif" font-size="13">Core 01-08 [Load Average]</text>
+    <text x="340" y="80" fill="#FF7138" font-family="monospace" font-size="13" font-weight="700">34.8%</text>
+    <rect x="24" y="92" width="352" height="10" rx="5" fill="#1E2736"/>
+    <rect x="24" y="92" width="122" height="10" rx="5" fill="url(#cyberOrange)"/>
+
+    <!-- RAM Bar -->
+    <text x="24" y="140" fill="#969DA8" font-family="'Space Grotesk', sans-serif" font-size="13">RAM Usage (DDR4 / 16GB)</text>
+    <text x="340" y="140" fill="#C5A16A" font-family="monospace" font-size="13" font-weight="700">6.4 GB</text>
+    <rect x="24" y="152" width="352" height="10" rx="5" fill="#1E2736"/>
+    <rect x="24" y="152" width="140" height="10" rx="5" fill="url(#goldAccent)"/>
+
+    <!-- SWAP Bar -->
+    <text x="24" y="200" fill="#969DA8" font-family="'Space Grotesk', sans-serif" font-size="13">Swap Memory (Virtual)</text>
+    <text x="350" y="200" fill="#969DA8" font-family="monospace" font-size="13">1.2%</text>
+    <rect x="24" y="212" width="352" height="10" rx="5" fill="#1E2736"/>
+    <rect x="24" y="212" width="30" height="10" rx="5" fill="#38A169"/>
+
+    <!-- Process Count Tag -->
+    <rect x="24" y="245" width="165" height="32" rx="6" fill="#17202D" stroke="#2D3A4E"/>
+    <text x="36" y="266" fill="#F2F1ED" font-family="monospace" font-size="11">TASKS: 184 ACTIVE</text>
+    <rect x="211" y="245" width="165" height="32" rx="6" fill="#17202D" stroke="#2D3A4E"/>
+    <text x="223" y="266" fill="#38A169" font-family="monospace" font-size="11">THREATS: 0 DETECTED</text>
+  </g>
+
+  <!-- Right: Network & Port Topology Matrix -->
+  <g transform="translate(480, 110)">
+    <rect width="660" height="300" rx="10" fill="#111620" stroke="#253041" stroke-width="1.2"/>
+    <rect width="660" height="45" rx="10" fill="#151D2A"/>
+    <text x="24" y="28" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">NETWORK SOCKETS &amp; PORT MONITORING</text>
+    <text x="560" y="28" fill="#C5A16A" font-family="monospace" font-size="11">AUTO-MAP</text>
+
+    <!-- Network Nodes visual -->
+    <g transform="translate(30, 70)">
+      <!-- Central Node -->
+      <circle cx="150" cy="110" r="32" fill="#1E2736" stroke="#FF7138" stroke-width="2"/>
+      <circle cx="150" cy="110" r="12" fill="#FF7138" opacity="0.8"/>
+      <text x="150" y="160" text-anchor="middle" fill="#F2F1ED" font-family="'Space Grotesk', sans-serif" font-size="11">GATEWAY [eth0]</text>
+
+      <!-- Connected Nodes -->
+      <line x1="150" y1="110" x2="320" y2="50" stroke="#2E3C52" stroke-width="2" stroke-dasharray="4"/>
+      <line x1="150" y1="110" x2="340" y2="120" stroke="#FF7138" stroke-width="2"/>
+      <line x1="150" y1="110" x2="310" y2="180" stroke="#2E3C52" stroke-width="2" stroke-dasharray="4"/>
+
+      <!-- Node 1 -->
+      <circle cx="320" cy="50" r="20" fill="#161F2C" stroke="#C5A16A" stroke-width="1.5"/>
+      <text x="350" y="54" fill="#F2F1ED" font-family="monospace" font-size="11">:443 HTTPS (TLS 1.3)</text>
+
+      <!-- Node 2 -->
+      <circle cx="340" cy="120" r="22" fill="#161F2C" stroke="#FF7138" stroke-width="2"/>
+      <text x="375" y="124" fill="#FF7138" font-family="monospace" font-size="11" font-weight="700">:22 SSH (Established / Kali-01)</text>
+
+      <!-- Node 3 -->
+      <circle cx="310" cy="180" r="20" fill="#161F2C" stroke="#38A169" stroke-width="1.5"/>
+      <text x="340" y="184" fill="#F2F1ED" font-family="monospace" font-size="11">:8080 API Daemon (psutil socket)</text>
+    </g>
+  </g>
+
+  <!-- Bottom: Rich Terminal Live Output Simulation -->
+  <g transform="translate(60, 430)">
+    <rect width="1080" height="320" rx="10" fill="#0C0F15" stroke="#253041" stroke-width="1.2"/>
+    <rect width="1080" height="38" rx="10" fill="#131923"/>
+    <text x="24" y="24" fill="#969DA8" font-family="monospace" font-size="12">root@kali: ~/monitor_pro # python3 main.py --daemon --realtime</text>
+
+    <!-- Terminal Code / Output stream -->
+    <g transform="translate(24, 60)" font-family="'Consolas', 'Courier New', monospace" font-size="12">
+      <text y="20" fill="#C5A16A">[+] Initializing MonitorEngine with psutil backend...</text>
+      <text y="45" fill="#38A169">[INFO] System telemetry probe started (Interval: 1.0s, Target: Linux 6.6.9-kali1-amd64)</text>
+      <text y="70" fill="#969DA8">[PID 1402] python3 server/monitor_server.py | CPU: 2.1% | MEM: 48.2MB | PORT: 8443 (LISTENING)</text>
+      <text y="95" fill="#969DA8">[PID 1894] /usr/bin/auditd -s 1 -f               | CPU: 0.4% | MEM: 12.0MB | STATUS: ACTIVE_SECURE</text>
+      <text y="120" fill="#FF7138">[SECURITY] AlertManager: Port scan detector loaded. 0 anomaly registered.</text>
+      <text y="145" fill="#F2F1ED">---------------------------------------------------------------------------------------------------------</text>
+      <text y="170" fill="#C5A16A">HOST METRICS: CPU [||||||||||.............. 34%] | RAM [||||||||||||||||..... 40%] | DISK [||||||||...... 22%]</text>
+      <text y="195" fill="#38A169">[STREAM] 2026-11-03 14:15:02 UTC - Socket verification: All established connections authenticated.</text>
+      <text y="220" fill="#969DA8">─────────────────────────────────────────────────────────────────────────────────────────────────────────</text>
+      <text y="245" fill="#FF7138" font-weight="700">● LIVE MONITORING ENGAGED — SYSTEM NOMINAL</text>
+    </g>
+  </g>
+</svg>
